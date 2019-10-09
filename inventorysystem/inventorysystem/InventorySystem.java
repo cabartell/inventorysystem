@@ -1,6 +1,7 @@
 
 package inventorysystem;
 
+import java.util.ArrayList;
 import java.util.Date;
 
 /**
@@ -33,6 +34,13 @@ public class InventorySystem {
         {
             System.out.println(nfi);
         }
+
+        Inventory inv = new Inventory();
+        for (int i = 0; i <= 5; i++){
+            inv.additem(new NonFoodItem("Non-food Item " + i, 1000 * Math.random(), new String[]{"Material 1", "Material 2"}));
+            inv.additem(new FoodItem("Food Item " + i, i * 3, new Date()));
+            inv.printInventory();
+            inv.getInventoryValue();
+        }
     }
-    
 }

@@ -3,6 +3,7 @@ package inventorysystem;
 import java.util.ArrayList;
 
 public class Inventory {
+
     private ArrayList<Item> items = new ArrayList<>();
 
     public void additem(Item item){
@@ -28,5 +29,4 @@ public class Inventory {
             System.out.println(i);
         }
     }
-
 }
